@@ -1,20 +1,16 @@
 "use client";
 
-import { Box, Button, Text } from "@chakra-ui/react";
-import React, { useEffect, useState } from "react";
-
-const images = ["/satu.jpg", "/dua.jpg", "/tiga.jpg", "/coverLeft.jpeg", "/coverRight.jpeg"];
+import { Box, Text, Image, Flex, Button, WrapItem, Wrap, Center } from "@chakra-ui/react";
 
 const Hero = (): JSX.Element => {
   return (
     <div id="welcome_section">
       <Box
-        height="100vh"
         width="100%"
         backgroundColor="white"
         backgroundSize="cover"
         backgroundPosition="center"
-        padding="42px"
+        padding="2rem"
         textAlign="center"
       >
         <Text fontWeight="bold" fontFamily="Poppins" color="black" fontSize="medium" textAlign="center">
@@ -30,9 +26,32 @@ const Hero = (): JSX.Element => {
         <Text fontFamily="Newsreader" color="black">
           Together with joyful hearts and the grace of God, we joyfully announce the upcoming of our marriage.
         </Text>
-        <Box padding="2rem 0" height="50%" justifyContent="center" alignItems="center">
-          Image Slider
-        </Box>      
+        <Box paddingTop="2rem" justifyContent="center" alignItems="center">
+          <Flex
+            height="100%"
+            direction="column"
+            alignItems="center"
+          >
+            <Box>
+              <Image
+                height="400px"
+                objectFit="cover"
+                src="/photo-4.jpg"
+                alt="couple"
+                />
+              {/* <Image
+                height="400px"
+                objectFit="cover"
+                src="/photo-5.jpg"
+                alt="couple"
+                /> */}
+            </Box>
+            <Box paddingTop="1rem">
+              <Button>Next</Button>
+              <Button>Prev</Button>
+            </Box>
+          </Flex>
+        </Box>
       </Box>
     </div>
   );
