@@ -4,7 +4,7 @@ import { Box, Button, Flex, Text } from "@chakra-ui/react";
 
 const Hero = (): JSX.Element => {
   return (
-    <div id="welcome_section">
+    <div id="giftcard_section">
       <Box
         height="280px"
         width="100%"

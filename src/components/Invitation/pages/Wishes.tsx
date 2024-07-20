@@ -4,7 +4,7 @@ import { Box, Button, FormControl, FormLabel, Input, Text, Textarea } from "@cha
 
 const Hero = (): JSX.Element => {
   return (
-    <div id="welcome_section">
+    <div id="wishes_section">
       <Box
         height="100%"
         width="100%"

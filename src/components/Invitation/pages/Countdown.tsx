@@ -5,7 +5,7 @@ import Timer from "./components/Timer";
 
 const Hero = (): JSX.Element => {
   return (
-    <div id="welcome_section">
+    <div id="countdown_section">
       <Box
         height="100%"
         width="100%"

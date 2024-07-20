@@ -4,7 +4,7 @@ import { Box, Text } from "@chakra-ui/react";
 
 const Hero = (): JSX.Element => {
   return (
-    <div id="welcome_section">
+    <div id="detail_section">
       <Box
         height="100%"
         width="100%"
