@@ -20,10 +20,9 @@ const Hero = (): JSX.Element => {
           alignItems="center"
         >
           <Text
-            fontWeight="bold"
-            fontFamily="Poppins"
-            color="black"
-            fontSize="3xl"
+            fontFamily="Butler"
+            fontWeight="600"
+            fontSize="28px"
             textAlign="center"
             mb={4}
           >
@@ -31,7 +30,7 @@ const Hero = (): JSX.Element => {
             Getting Married!
           </Text>
           <Image
-            height="400px"
+            height="350px"
             objectFit="cover"
             src="/photo-5.jpg"
             alt="couple"
@@ -41,7 +40,7 @@ const Hero = (): JSX.Element => {
             textDecoration="underline"
             fontWeight="bold"
             href="https://www.youtube.com/watch?v=WEC5RezD5jU" target="_blank">
-            WATCH OUR VIDEO
+            <Text letterSpacing={2}>WATCH OUR VIDEO</Text>
           </Link>
           <Box paddingTop="2rem" paddingBottom="1rem">
             <Text>9 APRIL 2018</Text>

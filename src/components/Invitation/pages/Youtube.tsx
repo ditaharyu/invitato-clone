@@ -8,7 +8,7 @@ const Hero = (): JSX.Element => {
       <Box
         height="280px"
         width="100%"
-        backgroundImage="url('/photo-7.jpg')"
+        backgroundImage="url('/photo-8.jpg')"
         backgroundSize="cover"
         backgroundPosition="center"
         textAlign="center"
@@ -19,8 +19,10 @@ const Hero = (): JSX.Element => {
           alignItems="center"
           justifyContent="center"
         >
-          <Text color="white">Wedding Gift</Text>
-          <Button>Send Gift</Button>
+          <Text fontFamily="Butler" fontWeight="300" fontSize="28px" color="white">Live Streaming</Text>
+          <Button padding="1rem 2rem" size="sm" border="1px solid black" borderRadius={0} backgroundColor="#F9F7F4">
+            <Text fontFamily="Newsreader" fontWeight="100" fontSize="18px" fontStyle="italic">Open via Youtube</Text>
+          </Button>
         </Flex>
       </Box>
     </div>

@@ -12,41 +12,62 @@ const Hero = (): JSX.Element => {
         backgroundSize="cover"
         backgroundPosition="center"
         textAlign="center">
-        <Box padding="2rem">
-          <Text>
+        <Box
+          paddingBottom="4rem"
+          paddingTop="2rem">
+          <Text fontFamily="Poppins" fontWeight="700" letterSpacing={1} marginBottom="1.5rem">
             OUR SINCERE,
           </Text>
-          <Text>
+          <Text fontFamily="Butler" fontWeight="light" fontSize="3xl">
             TIFFANY & JARED
           </Text>
-          <Text>
+          <Text fontFamily="Newsreader" fontWeight="300" fontSize="3xl" fontStyle="italic">
             #TImetoshaRE
           </Text>
         </Box>
         <Flex>
           <Image
             width="33%"
-            height="125px"
+            height="160px"
             objectFit="cover"
             src="/photo-3.jpg"
             alt="couple"
           />
           <Image
             width="33%"
-            height="125px"
+            height="160px"
             objectFit="cover"
             src="/photo-8.jpg"
             alt="couple"
           />
           <Image
             width="33%"
-            height="125px"
+            height="160px"
             objectFit="cover"
             src="/photo-7.jpg"
             alt="couple"
           />
         </Flex>
-        <Box backgroundColor="#F9F7F4">
+        <Box
+          padding="1.5rem"
+          backgroundColor="#F9F7F4"
+          fontFamily="Newsreader"
+          fontWeight="100"
+          fontSize="14px"
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          textAlign="center">
+          <Link href="https://invitato.id/">
+            <Image
+              width="100px"
+              objectFit="cover"
+              src="/invitato.jpg"
+              alt="couple"
+              filter="grayscale(100%) brightness(0%)"
+              marginBottom=".5rem"
+            />
+          </Link>
           <Link href="https://invitato.id/">
             <Text>Created with Love by Invitato</Text>
           </Link>

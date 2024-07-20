@@ -1,29 +1,41 @@
 "use client";
 
 import { Box, Text, Image, Flex, Button, WrapItem, Wrap, Center } from "@chakra-ui/react";
+import Carousel from "./components/Carousel";
 
 const Hero = (): JSX.Element => {
+
+  const images = [
+    '/photo-1.jpg',
+    '/photo-2.jpg',
+    '/photo-3.jpg',
+    '/photo-4.jpg',
+    '/photo-5.jpg',
+  ];
+  const imageWidth = 250;
+  const imageHeight = 400;
+
   return (
-    <div id="welcome_section">
+    <div id="welcome">
       <Box
         width="100%"
         backgroundColor="white"
         backgroundSize="cover"
         backgroundPosition="center"
-        padding="2rem"
+        padding="3rem 2rem"
         textAlign="center"
       >
-        <Text fontWeight="bold" fontFamily="Poppins" color="black" fontSize="medium" textAlign="center">
+        <Text fontWeight="bold" fontFamily="Poppins" color="black" fontSize="14px" textAlign="center" letterSpacing="1px">
           DEAR MR-MRS-MS,
           <br/>
           FAMILY & FRIENDS
         </Text>
-        <Text padding="2rem 0" fontFamily="Butler" color="black" fontWeight="bold" textAlign="center" fontSize="3xl">
+        <Text padding="2rem 0" lineHeight={1.25} fontFamily="Butler" color="black" fontWeight="bold" textAlign="center" fontSize="3xl">
           Welcome to <br/>
           Tiffany & Jared’s <br/>
           Wedding Website
         </Text>
-        <Text fontFamily="Newsreader" color="black">
+        <Text fontFamily="Newsreader" fontWeight="300" fontSize="18px" color="gray" fontStyle="italic">
           Together with joyful hearts and the grace of God, we joyfully announce the upcoming of our marriage.
         </Text>
         <Box paddingTop="2rem" justifyContent="center" alignItems="center">
@@ -32,23 +44,8 @@ const Hero = (): JSX.Element => {
             direction="column"
             alignItems="center"
           >
-            <Box>
-              <Image
-                height="400px"
-                objectFit="cover"
-                src="/photo-4.jpg"
-                alt="couple"
-                />
-              {/* <Image
-                height="400px"
-                objectFit="cover"
-                src="/photo-5.jpg"
-                alt="couple"
-                /> */}
-            </Box>
-            <Box paddingTop="1rem">
-              <Button>Next</Button>
-              <Button>Prev</Button>
+            <Box width="100%" margin="0 auto">
+              <Carousel images={images} imageWidth={imageWidth} imageHeight={imageHeight} />
             </Box>
           </Flex>
         </Box>

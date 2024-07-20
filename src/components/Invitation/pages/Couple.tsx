@@ -11,23 +11,26 @@ const Hero = (): JSX.Element => {
         backgroundColor="white"
         backgroundSize="cover"
         backgroundPosition="center"
-        padding="2rem"
+        paddingTop="2rem"
+        paddingBottom="3rem"
         textAlign="center"
       >
         <Flex
           height="100%"
           direction="column"
           alignItems="center"
+          padding="0 2rem"
         >
           <Text
-            fontWeight="bold"
             fontFamily="Poppins"
+            fontWeight="700"
             color="black"
             fontSize="medium"
             textAlign="center"
-            mb={4}
+            marginBottom="3rem"
+            letterSpacing={1}
           >
-            MEET THE BRIDE AND GROOM
+            MEET THE BRIDE & GROOM
           </Text>
           <Image
             boxSize="280px"
@@ -36,17 +39,21 @@ const Hero = (): JSX.Element => {
             alt="couple"
           />
           <Box paddingTop="3rem" paddingBottom="1rem">
-            <Text>TIFFANY SMITH</Text>
-            <Link href="https://www.instagram.com/tiffanyinvitato">@tiffanyinvitato</Link>
-            <Text>
+            <Text fontFamily="Butler" fontWeight="light" fontSize="28px">TIFFANY SMITH</Text>
+            <Link href="https://www.instagram.com/tiffanyinvitato">
+              <Text fontFamily="Butler" fontWeight="light" fontSize="xl">@tiffanyinvitato</Text>
+            </Link>
+            <Text fontFamily="Newsreader" fontWeight="300" fontSize="18px" color="grey" fontStyle="italic">
               The Daughter of<br/>
               Mr. Smith & Mrs. Bellyna
             </Text>
           </Box>
           <Box paddingTop="2rem" paddingBottom="1rem">
-            <Text>ROBIN JARED LUCAS</Text>
-            <Link href="https://www.instagram.com/jaredinvitato">@jaredinvitato</Link>
-            <Text>
+            <Text fontFamily="Butler" fontWeight="light" fontSize="28px">ROBIN JARED LUCAS</Text>
+            <Link href="https://www.instagram.com/jaredinvitato">
+              <Text fontFamily="Butler" fontWeight="light" fontSize="xl">@jaredinvitato</Text>
+            </Link>
+            <Text fontFamily="Newsreader" fontWeight="300" fontSize="18px" color="grey" fontStyle="italic">
               The Son of<br/>
               Mr. Lucas & Mrs. Anita
             </Text>
