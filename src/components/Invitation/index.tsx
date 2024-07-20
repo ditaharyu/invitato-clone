@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Button } from "@chakra-ui/react";
 import React from "react";
 import Hero from "./pages/Hero";
 import Welcome from "./pages/Welcome";
@@ -11,7 +11,7 @@ import Wishes from "./pages/Wishes";
 import Countdown from "./pages/Countdown";
 import Footer from "./pages/Footer";
 
-const Invitation = (): JSX.Element => {
+const Invitation = (): JSX.Element => {  
   return (
     // <Box height="100%" width="100%" overflowY="auto">
     <Box height="100%" width="100%">

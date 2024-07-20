@@ -6,6 +6,8 @@ import RightView from "@/components/RightView";
 import { Box, Flex, useMediaQuery } from "@chakra-ui/react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import DrawerButton from "@/components/SidebarButton";
+import Sidebar from "@/components/Sidebar";
 
 export default function Page() {
   const [showMenu, setShowMenu] = useState<boolean>(false);
@@ -37,20 +39,24 @@ export default function Page() {
           <Box overflowY="hidden">
             <AnimatePresence mode="wait">
               {showMenu ? (
-                <motion.div
-                  key="invitation"
-                  initial={{ y: "100%", opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  exit={{ y: "-100%", opacity: 0 }}
-                  transition={{
-                    type: "spring",
-                    stiffness: 50,
-                    damping: 15,
-                    duration: 0.5,
-                  }}
-                >
-                  <Invitation />
-                </motion.div>
+                <>
+                  <motion.div
+                    key="invitation"
+                    initial={{ y: "100%", opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    exit={{ y: "-100%", opacity: 0 }}
+                    transition={{
+                      type: "spring",
+                      stiffness: 50,
+                      damping: 15,
+                      duration: 0.5,
+                    }}
+                  >
+                    <Invitation />
+                  </motion.div>
+                  <DrawerButton />
+                  <Sidebar />
+                </>
               ) : (
                 <motion.div
                   key="rightView"
