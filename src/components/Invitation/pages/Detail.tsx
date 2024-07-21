@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
 
 const Hero = (): JSX.Element => {
   return (
@@ -14,14 +14,26 @@ const Hero = (): JSX.Element => {
       >
         <Box
           backgroundColor="#F9F7F4"
-          padding="4rem 2rem"
+          paddingTop="3rem"
+          paddingBottom="4rem"
           textAlign="center">
-          <Text fontFamily="Newsreader" fontWeight="300" fontSize="18px" color="grey" fontStyle="italic">
-            “And of His signs is that He created for you from yourselves mates that you may find tranquility in them, and He placed between you affection and mercy. Indeed in that are signs for a people who give thought.”
-          </Text>
-          <Text fontFamily="Poppins" fontWeight="700" fontSize="16px" paddingTop="2rem" letterSpacing={1.25}>
-            - Q.S. AR-RUM: 21
-          </Text>
+          <Flex justifyContent="center">
+            <Image
+              width="50px"
+              objectFit="cover"
+              src="/quotes.svg"
+              alt="quote"
+              marginBottom="1rem"
+            />
+          </Flex>
+          <Box padding="0 2rem">
+            <Text fontFamily="Newsreader" fontWeight="300" fontSize="18px" color="grey" fontStyle="italic">
+              “And of His signs is that He created for you from yourselves mates that you may find tranquility in them, and He placed between you affection and mercy. Indeed in that are signs for a people who give thought.”
+            </Text>
+            <Text fontFamily="Poppins" fontWeight="700" fontSize="16px" paddingTop="2rem" letterSpacing={1.25}>
+              - Q.S. AR-RUM: 21
+            </Text>
+          </Box>
         </Box>
         <Box padding="3rem 2rem">
           <Text fontFamily="Poppins" fontWeight="700" fontSize="16px" letterSpacing={1}>PLACE & TIME</Text>
