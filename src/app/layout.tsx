@@ -6,8 +6,8 @@ import { Providers } from "./providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "The Wedding of Tiffani & Jared By Invitato",
-  description: "The Wedding of Tiffani & Jared By Invitato",
+  title: "The Wedding of Tiffany & Jared By Invitato",
+  description: "The Wedding of Tiffany & Jared By Invitato",
 };
 
 export default function RootLayout({

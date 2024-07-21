@@ -20,7 +20,15 @@ const Hero = (): JSX.Element => {
           justifyContent="center"
         >
           <Text fontFamily="Butler" fontWeight="300" fontSize="28px" color="white">Live Streaming</Text>
-          <Button padding="1rem 2rem" size="sm" border="1px solid black" borderRadius={0} backgroundColor="#F9F7F4">
+          <Button
+            as="a"
+            href="https://www.youtube.com/watch?v=ApX0LaS6gSM"
+            target="_blank"
+            padding="1rem 2rem"
+            size="sm"
+            border="1px solid black"
+            borderRadius={0}
+            backgroundColor="#F9F7F4">
             <Text fontFamily="Newsreader" fontWeight="100" fontSize="18px" fontStyle="italic">Open via Youtube</Text>
           </Button>
         </Flex>

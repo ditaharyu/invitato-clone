@@ -1,6 +1,7 @@
 "use client";
 
 import { Box, Button, Flex, Text } from "@chakra-ui/react";
+import GiftInfo from "./components/GiftInfo";
 
 const Hero = (): JSX.Element => {
   return (
@@ -20,9 +21,10 @@ const Hero = (): JSX.Element => {
           justifyContent="center"
         >
           <Text fontFamily="Butler" fontWeight="300" fontSize="28px" color="white">Wedding Gift</Text>
-          <Button padding="1rem 2rem" size="sm" border="1px solid black" borderRadius={0} backgroundColor="#F9F7F4">
+          <GiftInfo />
+          {/* <Button padding="1rem 2rem" size="sm" border="1px solid black" borderRadius={0} backgroundColor="#F9F7F4">
             <Text fontFamily="Newsreader" fontWeight="100" fontSize="18px" fontStyle="italic">Send Gift</Text>
-          </Button>
+          </Button> */}
         </Flex>
       </Box>
     </div>

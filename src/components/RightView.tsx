@@ -41,7 +41,7 @@ const RightView = ({ handleOpen }: OpenProps): JSX.Element => {
         }}
       >
         <Button bgColor="#F9F7F4" onClick={handleOpen} borderRadius="none" minWidth="2rem" height="30px" padding="0 2.4rem">
-          <Text fontFamily="Newsreader" fontWeight="300">Open</Text>
+          <Text fontFamily="Newsreader" fontWeight="300" fontStyle="italic">Open</Text>
         </Button>
       </motion.div>
     </Box>

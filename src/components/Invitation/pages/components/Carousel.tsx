@@ -57,10 +57,10 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images, imageWidth, imageHeig
         </motion.div>
       </Box>
       <Box display="flex" gap={2} justifyContent="end" marginTop="30px">
-        <Button size="sm" border="1px solid black" borderRadius={0} backgroundColor="#F9F7F4" onClick={handlePrev}>
+        <Button size="sm" padding="0 2rem" border="1px solid black" borderRadius={0} backgroundColor="#F9F7F4" onClick={handlePrev}>
           <ArrowBackIcon boxSize={5}/>
         </Button>
-        <Button size="sm" border="1px solid black" borderRadius={0} backgroundColor="#F9F7F4" onClick={handleNext}>
+        <Button size="sm" padding="0 2rem" border="1px solid black" borderRadius={0} backgroundColor="#F9F7F4" onClick={handleNext}>
           <ArrowForwardIcon boxSize={5}/>
         </Button>
       </Box>

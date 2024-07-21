@@ -8,9 +8,9 @@ const Hero = (): JSX.Element => {
   const images = [
     '/photo-1.jpg',
     '/photo-2.jpg',
-    '/photo-3.jpg',
     '/photo-4.jpg',
     '/photo-5.jpg',
+    '/photo-6.jpg',
   ];
   const imageWidth = 250;
   const imageHeight = 400;
@@ -25,7 +25,7 @@ const Hero = (): JSX.Element => {
         padding="3rem 2rem"
         textAlign="center"
       >
-        <Text fontWeight="bold" fontFamily="Poppins" color="black" fontSize="14px" textAlign="center" letterSpacing="1px">
+        <Text fontWeight="bold" fontFamily="Poppins" color="black" fontSize="12px" textAlign="center" letterSpacing={2}>
           DEAR MR-MRS-MS,
           <br/>
           FAMILY & FRIENDS

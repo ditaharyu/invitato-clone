@@ -1,8 +1,16 @@
 "use client";
 
-import { Box, Text, Image, Flex, Link } from "@chakra-ui/react";
+import { Box, Text, Image, Flex, Link, useMediaQuery } from "@chakra-ui/react";
+import { useEffect, useState } from "react";
 
 const Hero = (): JSX.Element => {
+  const [isDesktop, setIsDesktop] = useState<boolean>(true);
+  const [mediaQuery] = useMediaQuery('(min-width: 1025px)');
+
+  useEffect(() => {
+    setIsDesktop(mediaQuery);
+  }, [mediaQuery]);
+  
   return (
     <div id="couple_section">
       <Box
@@ -19,7 +27,6 @@ const Hero = (): JSX.Element => {
           height="100%"
           direction="column"
           alignItems="center"
-          padding="0 2rem"
         >
           <Text
             fontFamily="Poppins"
@@ -28,16 +35,29 @@ const Hero = (): JSX.Element => {
             fontSize="medium"
             textAlign="center"
             marginBottom="3rem"
-            letterSpacing={1}
+            letterSpacing={2}
           >
             MEET THE BRIDE & GROOM
           </Text>
-          <Image
-            boxSize="280px"
-            objectFit="cover"
-            src="/photo-3.jpg"
-            alt="couple"
-          />
+          <Flex justifyContent="center" alignItems="center" position="relative">
+            <Box position="relative">
+              <Image
+                width="280px"
+                height="380px"
+                src="/lines.svg"
+                alt="lines"
+                position="absolute"
+                top="-83px"
+                left={isDesktop? "-170px": "-115px"}
+              />
+              <Image
+                boxSize="280px"
+                objectFit="cover"
+                src="/photo-3.jpg"
+                alt="couple"
+              />
+            </Box>
+          </Flex>
           <Box paddingTop="3rem" paddingBottom="1rem">
             <Text fontFamily="Butler" fontWeight="light" fontSize="28px">TIFFANY SMITH</Text>
             <Link href="https://www.instagram.com/tiffanyinvitato">

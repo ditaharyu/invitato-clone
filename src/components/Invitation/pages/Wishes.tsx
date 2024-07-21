@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Button, FormControl, FormLabel, Input, Text, Textarea } from "@chakra-ui/react";
+import { Box, Button, Flex, FormControl, FormLabel, Input, Text, Textarea } from "@chakra-ui/react";
 
 const Hero = (): JSX.Element => {
   return (
@@ -27,47 +27,52 @@ const Hero = (): JSX.Element => {
           textAlign="center">
           Please leave your sincere prayers and wishes to us and our family:
         </Text>
-        <Box padding="2rem 4rem">
-          <FormControl fontFamily="Newsreader">
-            <Input
-              border="1px solid"
-              borderRadius="0"
-              backgroundColor="white"
-              placeholder="Name"
-              margin="7px 0"
-              type='text' />
-            <Input
-              border="1px solid"
-              borderRadius="0"
-              backgroundColor="white"
-              placeholder="The Relationship"
-              margin="7px 0"
-              type='text' />
-            <Textarea
-              border="1px solid"
-              borderRadius="0"
-              backgroundColor="white"
-              margin="7px 0"
-              placeholder='Prayers & Wishes' />
-          </FormControl>
-          <Box
-            marginTop=".5rem"
-            textAlign="right">
-            <Button
-              border="1px black solid"
-              borderRadius="0"
-              backgroundColor="#cdc1b1"
-              color="white"
-              size="sm"
-              padding="0 2rem">
-              <Text fontFamily="Newsreader" fontWeight="100" fontStyle="italic" fontSize="18px">Submit</Text>
-            </Button>
+        <Flex justifyContent="center" alignItems="center">
+          <Box paddingTop="1rem" width="70%">
+            <FormControl fontFamily="Newsreader">
+              <Input
+                border="1px solid"
+                borderRadius="0"
+                backgroundColor="white"
+                placeholder="Name"
+                margin="7px 0"
+                type="text"
+                color='black'
+              />
+              <Input
+                border="1px solid"
+                borderRadius="0"
+                backgroundColor="white"
+                placeholder="The Relationship"
+                margin="7px 0"
+                type="text"
+                color="black"
+              />
+              <Textarea
+                border="1px solid"
+                borderRadius="0"
+                backgroundColor="white"
+                margin="7px 0"
+                placeholder="Prayers & Wishes"
+                color="black"
+              />
+            </FormControl>
+            <Box marginTop=".5rem" textAlign="right">
+              <Button
+                border="1px black solid"
+                borderRadius="0"
+                backgroundColor="#cdc1b1"
+                color="white"
+                size="sm"
+                padding="0 2rem"
+              >
+                <Text fontFamily="Newsreader" fontWeight="100" fontStyle="italic" fontSize="18px">
+                  Submit
+                </Text>
+              </Button>
+            </Box>
           </Box>
-        </Box>
-        <Box textAlign="center">
-          <Text>Hi, Tiffany and Jared!</Text>
-          <Text>- Invitato, Web Invites</Text>
-        </Box>
+        </Flex>
       </Box>
     </div>
   );

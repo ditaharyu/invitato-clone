@@ -6,7 +6,7 @@ import RightView from "@/components/RightView";
 import { Box, Flex, useMediaQuery } from "@chakra-ui/react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import DrawerButton from "@/components/SidebarButton";
+import AudioPlayer from "@/components/AudioPlayer";
 import Sidebar from "@/components/Sidebar";
 
 export default function Page() {
@@ -20,7 +20,6 @@ export default function Page() {
 
   const openInvitation = () => {
     setShowMenu(true);
-    // setPlayMusic(true);
   }
 
   return (
@@ -54,8 +53,8 @@ export default function Page() {
                   >
                     <Invitation />
                   </motion.div>
-                  <DrawerButton />
                   <Sidebar />
+                  <AudioPlayer />
                 </>
               ) : (
                 <motion.div

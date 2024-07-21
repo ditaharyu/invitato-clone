@@ -1,7 +1,7 @@
 "use client";
 
 import { ChevronDownIcon } from "@chakra-ui/icons";
-import { Box, Button, Link, Text } from "@chakra-ui/react";
+import { Box, Button, Text } from "@chakra-ui/react";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
 
@@ -110,20 +110,19 @@ const Hero = (): JSX.Element => {
               repeatType: "loop",
             }}
           >
-            <Link href="#welcome">
-              <Button
-                as="a"
-                backgroundColor="transparent"
-                border="0px"
-                color="white"
-                fontFamily="Poppins"
-                fontWeight="bold"
-                fontSize="14px"
-                _hover={{ backgroundColor: "transparent", color: "white", textDecoration: "none" }}
-              >
-                SCROLL TO BEGIN <ChevronDownIcon boxSize={8}/>
-              </Button>
-            </Link>
+            <Button
+              as="a"
+              href="#welcome"
+              backgroundColor="transparent"
+              border="0px"
+              color="white"
+              fontFamily="Poppins"
+              fontWeight="bold"
+              fontSize="14px"
+              _hover={{ backgroundColor: "transparent", color: "white", textDecoration: "none" }}
+            >
+              SCROLL TO BEGIN <ChevronDownIcon boxSize={8}/>
+            </Button>
           </motion.div>
         </Box>
       </Box>

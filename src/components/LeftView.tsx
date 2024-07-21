@@ -17,11 +17,8 @@ const LeftView = (): JSX.Element => {
         WEDDING ANNOUNCEMENT
       </Text>
       <Box paddingTop="32px">
-        <Text fontFamily="Newsreader" fontWeight="light" color="white" fontSize="7xl" lineHeight="1" letterSpacing="4px">
-          TIFFANY &
-        </Text>
-        <Text fontFamily="Butler" fontWeight="light" color="white" fontSize="7xl" letterSpacing="4px">
-          JARED
+        <Text fontFamily="Butler" fontWeight="light" color="white" fontSize="7xl" lineHeight="1" letterSpacing="4px" mb={5}>
+          TIFFANY &<br/>JARED
         </Text>
       </Box>
       <Text fontFamily="Newsreader" letterSpacing="1px" fontWeight="300" color="white" maxWidth="800px" fontStyle="italic">
